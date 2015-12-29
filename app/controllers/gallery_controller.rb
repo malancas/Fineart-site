@@ -7,4 +7,13 @@ class GalleryController < PagesController
 
   def portraits
   end
+
+  def figures
+  end
+
+  def photography
+  end
+
+  def drawings
+  end
 end

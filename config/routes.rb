@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get 'stilllifes' => 'gallery#stilllifes'
   get 'landscapes' => 'gallery#landscapes'
   get 'portraits' => 'gallery#portraits'
-
+  get 'figures' => 'gallery#figures'
+  get 'photography' => 'gallery#photography'
+  get 'drawings' => 'gallery#drawings'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

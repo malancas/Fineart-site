@@ -16,4 +16,18 @@ class GalleryControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get photography" do
+    get :photography
+    assert_response :success
+  end
+
+  test "should get figures" do
+    get :figures
+    assert_response :success
+  end
+
+  test "should get drawings" do
+    get :drawings
+    assert_response :success
+  end
 end
