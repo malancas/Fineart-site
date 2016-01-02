@@ -1,3 +1,33 @@
-// Place all the styles related to the gallery controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+h1 {
+  	font-size: 4em;
+  	letter-spacing: -1.5px;
+  	margin-bottom: 30px;
+	line-height: 1.0;
+	text-align: left;
+}
+
+body {
+	text-align: left;
+	padding-top: 60px;
+}
+
+p {
+	font-size: 1em;
+	letter-spacing: -1px;
+	line-height: 0.5
+}
+
+section {
+  overflow: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'figures' => 'gallery#figures'
   get 'photography' => 'gallery#photography'
   get 'drawings' => 'gallery#drawings'
+  #get 'drawing-dog', => 'app/assets/images/drawing-dog.jpg'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
