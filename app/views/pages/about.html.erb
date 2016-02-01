@@ -1,5 +1,9 @@
-<% provide(:title, "About") %>
-
-<h1>About</h1>
-<p> Born in 19XX in XX, NY, XX found a passion and talent for art early in life. Through elementary to high school, XX remained 
-enthusiastic about art, constantly improving her portraiture and figure drawing skills</p>
+<% content_for :stylesheets do %>
+  #top_menu {display: none}
+  #right_menu {float: right; background-color: yellow; color: black}
+<% end %>
+<% content_for :content do %>
+  <div id="right_menu">Right menu items here</div>
+  <%= content_for?(:news_content) ? yield(:news_content) : yield %>
+<% end %>
+<%= render template: "layouts/application" %>
