@@ -1,6 +1,9 @@
 <% provide(:title, "Photography") %>
 
-<!--
+<% content_for :header do %>
+<title>Photography</title>
+<% end %>
+
 <div id="links">
     <a href="images/drawing-dog.jpg" title="Banana" data-gallery>
         <%= image_tag("drawing-dog.jpg", size: "40x60", alt: "Wiif")%>
@@ -12,4 +15,3 @@
         <%= image_tag("portrait-lass.jpg", size: "40x60", alt: "Wiif")%>
     </a>
 </div>
--->

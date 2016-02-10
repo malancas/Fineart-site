@@ -1,42 +1,9 @@
 <% provide(:title, "Still lifes") %>
 
-<html>
-<head>
-<style>
-div.img {
-    margin: 20px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
+<header>
+  <h1>Still Lifes</h1>
+</header>
 
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-</style>
-</head>
-<body>
-
-<!-- thumbnail image gallery: http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h -->
-<div class="container">
-    <h2>Thumbnail</h2>
-  <%= image_tag("drawing-dog.jpg", class:"img-thumbnail", alt:"Dog", width:"304", height:"300") %> 
-</div>
-
-</body>
-</html> 
-
-<!--
 <div id="links">
     <a href="images/drawing-dog.jpg" title="Banana" data-gallery>
         <%= image_tag("drawing-dog.jpg", size: "40x60", alt: "Wiif")%>
@@ -48,4 +15,3 @@ div.desc {
         <%= image_tag("portrait-lass.jpg", size: "40x60", alt: "Wiif")%>
     </a>
 </div>
--->
