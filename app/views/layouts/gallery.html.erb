@@ -1,15 +1,5 @@
-<% content_for :content do %>
-<header>
-    <%= yield :header %>
-    <h1> HERE IS HEADER </h1>
-<!-- https://github.com/blueimp/Bootstrap-Image-Gallery
-     http://guides.rubyonrails.org/layouts_and_rendering.html#using-nested-layouts 
-    http://stackoverflow.com/questions/7848020/rails-newbie-about-yield 
-    http://guides.rubyonrails.org/layouts_and_rendering.html#understanding-yield -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-</header>
+<%= render 'layouts/gallery_header' %> 
+
 <body>
   <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
@@ -45,21 +35,9 @@
         </div>
     </div>
 </div>
-
-<div id="links">
-    <%= yield %>
-    <!-- Content from gallery views goes here 
-    <div id="links"> content </div> -->
-</div>
-
+    <%= yield :id %>
 </body>
-<footer>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
-</footer>
 
-  <%= content_for?(:gallery_content) ? yield(:gallery_content) : yield %>
-<% end %>
+<%= render 'layouts/gallery_footer' %>
 
 <%= render template: "layouts/application" %>

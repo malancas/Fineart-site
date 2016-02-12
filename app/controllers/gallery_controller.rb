@@ -1,4 +1,6 @@
 class GalleryController < PagesController
+  layout "gallery"
+
   def stilllifes
   end
 
