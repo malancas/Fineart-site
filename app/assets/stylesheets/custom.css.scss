@@ -7,8 +7,8 @@
   box-sizing:         border-box;
 }
 
-h1 {
-  font-size: 4em;
+html h1 {
+  font-size: 700%;
   letter-spacing: -1.5px;
   margin-bottom: 30px;
 	line-height: 1.0;
@@ -19,11 +19,11 @@ h1 {
 body {
 	text-align: left;
 	padding-top: 60px;
-  background: #787878;
+  background: #0099FF;
 }
 
-p {
-	font-size: 1em;
+html p {
+	font-size: 210%;
 	letter-spacing: -1px;
 	line-height: 0.5;
 }
@@ -44,8 +44,14 @@ textarea {
   margin-bottom: 10px;
 }
 
-a:link {
+html a:link {
+  font-size: 210%;
   color: #000000;
+}
+
+html a:hover {
+  font-size: 210%;
+  color: red; 
 }
 
 /* miscellaneous */
