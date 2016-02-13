@@ -19,6 +19,16 @@ a {
 	color: #000000;
 }
 
+html a:link {
+  font-size: 210%;
+  color: #000000;
+}
+
+html a:hover {
+  font-size: 210%;
+  color: red; 
+}
+
 p {
 	font-size: 1em;
 	letter-spacing: -1px;
